@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 50px 0;
+    padding-top: 50px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__icon {
+        color: $colorMain;
+        opacity: 0.8;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .footer__text {
+        color: $colorMain;
+        opacity: 0.8;
+        font-size: 20px;
+    }
+}
