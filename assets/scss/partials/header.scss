@@ -29,6 +29,7 @@
           align-items: center;
         }
         span {
+          font-family: $fontMain;
           font-size: 30px;
           margin-left: 10px;
         }
@@ -37,6 +38,7 @@
         -webkit-transform: scale(1.1) rotate(4deg);
         transform: scale(1.1) rotate(4deg);
       }
+      
       &:nth-child(2) {
         width: 100%;
         justify-self: center;
@@ -95,6 +97,7 @@
       }
 
       &:last-child {
+        font-family: $fontMain;
         justify-self: end;
         padding-right: 25px;
         font-size: 25px;

@@ -6,6 +6,8 @@ body {
   background-color: $colorSub;
   color: $black;
   font-family: 'Amatic SC', cursive;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
@@ -14,4 +16,16 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   min-height: 70vh;
+}
+
+button {
+  padding: 7px 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+  color: $black;
+}
+
+a {
+  cursor: pointer;
 }

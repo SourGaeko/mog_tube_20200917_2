@@ -11,7 +11,7 @@ header.header
 
         .header__column
             ul
-                if !user.isAuthenticated
+                if !user
                     li.header__column-user
                         a(href=routes.join) Join
                     li.header__column-user
