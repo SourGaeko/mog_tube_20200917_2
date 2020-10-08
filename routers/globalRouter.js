@@ -10,6 +10,8 @@ import {
   logout,
   githubLogin,
   postGithubLogin,
+  postKakaotalkLogin,
+  kakaotalkLogin,
 } from "../controllers/userController";
 import { onlyPrivate, onlyPublic } from "../middlewares";
 
@@ -30,6 +32,13 @@ globalRouter.get(
   routes.githubCallback,
   passport.authenticate("github", { failureRedirect: "/login" }),
   postGithubLogin
+);
+
+globalRouter.get(routes.kakaotalk, kakaotalkLogin);
+globalRouter.get(
+  routes.kakaotalkCallback,
+  passport.authenticate("kakao", { failureRedirect: "/login" }),
+  postKakaotalkLogin
 );
 
 export default globalRouter;
